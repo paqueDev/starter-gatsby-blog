@@ -1,0 +1,1 @@
+script: test/test-on-remote-ci.sh
