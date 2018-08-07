@@ -1,5 +1,6 @@
 #!/bin/bash
 # Run end 2 end tests without polluting this repository
+echo $TRAVIS_PULL_REQUEST
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo "Not a pull request, skipping e2e tests"
   exit 0
