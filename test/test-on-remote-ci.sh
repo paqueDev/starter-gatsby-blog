@@ -10,7 +10,7 @@ ENV='TEST_REPO="contentful/starter-gatsby-blog" TEST_BRANCH="'$TRAVIS_BRANCH'" T
 
 BODY="{
   \"request\": {
-    \"message\": \"$TRAVIS_REPO_SLUG SDK Triggered Request\",
+    \"message\": \"$TRAVIS_REPO_SLUG Triggered Request\",
     \"branch\":\"travis_experiments\",
     \"config\": {\"env\": $ENV}
   }
@@ -23,4 +23,4 @@ curl -s -X POST \
     -H "Accept: application/json"   \
     -H "Travis-API-Version: 3"   \
     -H "Authorization: token $TRAVIS_E2E_TOKEN \
-    'https://api.travis-ci.com/repo/1336919/requests'
+    'https://api.travis-ci.com/repo/20307164/requests'
